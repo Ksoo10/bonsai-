@@ -1,0 +1,152 @@
+:root {
+    --main-bg-color:#69DC9E;
+    --secondary-bg-color:#F7F4EA;
+    --third-bg-color:#BA5A31; 
+    --btn-color:#E59F71;
+    --secondary-btn-color:#C0B9DD;
+    --head-color:#0C0C0C;
+
+    }
+
+
+
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: var(--head-color);
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+  padding-top:7rem;
+  padding: bottom 6rem;
+  max-width: 70rem;
+}
+
+.container {
+
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:70rem;
+}
+
+.wrapper { 
+    padding: 1rem;
+    margin:0 auto;
+}
+.primary-btn {
+    background-color: var(--btn-color); /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: var(--main-bg-color); /* Darker green on hover */
+}
+
+.card-wrapper
+{
+    padding: 2rem 2rem;
+    margin: 0 auto;
+}
+.card {
+    padding:1rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.main-wrapper
+ {
+ margin: 1rem 0;
+}
+
+.secondary-wrapper {
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+.business-container {
+    text-align: center;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color:var(--secondary-bg-color);
+    color: var(--main-bg-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 2rem 2rem;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
